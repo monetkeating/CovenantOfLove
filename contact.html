@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Contact</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Favicon links-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+  </head>
+  <body>
+    <p>Charlene Bynum, Founder<br />702-8104830</p>
+    <p>Ke'Tobie Kiper, Cheif of Quality Assurance<br />702-628-1162</p>
+    <p>Or contact us here!</p>
+    <form method="post" id="contact-form">
+      <label class="standard-label" for="contact-email"> E-mail: </label>
+      <input type="email" id="contact-email" required />
+
+      <label class="standard-label" for="contact-telephone"> Telephone: </label>
+      <input
+        type="tel"
+        id="contact-telephone"
+        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+      />
+
+      <label class="standard-label" for="contact-message"> Message: </label>
+      <textarea maxlength="240" id="contact-message" required></textarea>
+      <input type="submit" value="Send Message" />
+    </form>
+  </body>
+  <script src="js/tota11y.min.js"></script>
+</html>
