@@ -6,6 +6,19 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
     <!--Favicon links-->
     <link
       rel="apple-touch-icon"
@@ -26,25 +39,77 @@
     />
     <link rel="manifest" href="img/site.webmanifest" />
   </head>
-  <body>
-    <p>Charlene Bynum, Founder<br />702-8104830</p>
-    <p>Ke'Tobie Kiper, Cheif of Quality Assurance<br />702-628-1162</p>
-    <p>Or contact us here!</p>
-    <form method="post" id="contact-form">
-      <label class="standard-label" for="contact-email"> E-mail: </label>
-      <input type="email" id="contact-email" required />
+  <header>
+    <div>
+      <nav class="navigation">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="resources.html"
+              role="menuitem"
+              class="navigation-list__item"
+              >Resources</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="testimonials.html"
+              role="menuitem"
+              class="navigation-list__item"
+              >Testimonials</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div>
+    <body>
+      <p class="bold">Charlene Bynum, Founder<br />702-8104830</p>
+      <p class="bold">
+        Ke'Tobie Kiper, Cheif of Quality Assurance<br />702-628-1162
+      </p>
+      <p>Or contact us here!</p>
+      <form class="contact-form" method="post" id="contact-form">
+        <label class="standard-label" for="contact-email"> E-mail: </label>
+        <input class="input-box" type="email" id="contact-email" required />
 
-      <label class="standard-label" for="contact-telephone"> Telephone: </label>
-      <input
-        type="tel"
-        id="contact-telephone"
-        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-      />
+        <label class="standard-label" for="contact-telephone">
+          Telephone:
+        </label>
+        <input
+          class="input-box"
+          type="tel"
+          id="contact-telephone"
+          pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+        />
 
-      <label class="standard-label" for="contact-message"> Message: </label>
-      <textarea maxlength="240" id="contact-message" required></textarea>
-      <input type="submit" value="Send Message" />
-    </form>
-  </body>
+        <label class="standard-label" for="contact-message"> Message: </label>
+        <textarea
+          maxlength="240"
+          class="input-box"
+          id="contact-message"
+          required
+        ></textarea>
+        <button type="button">Send Message</button>
+      </form>
+    </body>
+  </div>
   <script src="js/tota11y.min.js"></script>
 </html>

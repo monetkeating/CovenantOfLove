@@ -1,0 +1,122 @@
+/* Colors used:
+
+Background: #F2F2DE
+Primary color (gold): #E3B71B
+Secondary color (maroon): #3e0201
+*/
+
+body {
+  background-color: #3e0201;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+a:hover,
+a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+a:visited {
+  /* visited link */
+  color: white;
+}
+
+a:active {
+  /* selected link */
+  color: #e3b71b;
+}
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #700505;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border: 2px solid #E3B71B(0, 0, 0, 0.3);
+}
+button:hover,
+button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+.navigation-list__item--active {
+  text-decoration: none;
+}
+div {
+  padding: 30px; /* Adds a 30px inner spacing to all sides*/
+  margin: 30px; /* Adds a 30px outer spacing to all sides*/
+  border: 2px solid white; /* Attributes describe: thickness, type, color*/
+  display: block;
+  text-align: center;
+}
+.page-header {
+  width: 100%;
+  padding: 20px;
+}
+.page-footer {
+  clear: both;
+}
+.background-image {
+  max-width: 90%;
+  display: inline-block;
+  padding: 10px; /* Adds a 10px inner spacing to all sides*/
+  margin: 0 auto; /* makes it center*/
+}
+.head-image {
+  /*the div for my background image*/
+  border: none;
+  padding: 30px;
+  margin: 0 auto;
+  display: flex;
+}
+.navigation-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  border: none;
+}
+.list {
+  list-style: none;
+}
+.bold {
+  font-weight: 400;
+}
+form {
+  display: flex;
+  justify-content: space-evenly;
+}
+.input-box {
+  border-radius: 15%;
+}
