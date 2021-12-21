@@ -1,7 +1,7 @@
 /* Colors used:
 
 Background: #F2F2DE
-Primary color (gold): #E3B71B
+Primary color (gold): #a97d14
 Secondary color (maroon): #3e0201
 */
 
@@ -47,7 +47,7 @@ a:visited {
 
 a:active {
   /* selected link */
-  color: #e3b71b;
+  color: #a97d14;
 }
 button {
   /* overwrites browser defaults and resets the border */
@@ -55,14 +55,14 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #700505;
+  background-color: #a97d14;
   color: white;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border: 2px solid #E3B71B(0, 0, 0, 0.3);
+  border: 2px solid #a97d14(0, 0, 0, 0.3);
 }
 button:hover,
 button:focus {
@@ -119,4 +119,7 @@ form {
 }
 .input-box {
   border-radius: 15%;
+}
+.phone-link {
+  color: white;
 }
